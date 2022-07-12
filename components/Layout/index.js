@@ -1,6 +1,3 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import Link from 'next/link'
 import { Children } from 'react'
 
 import NavBar from '../Nav'
