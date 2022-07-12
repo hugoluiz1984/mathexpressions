@@ -1,13 +1,13 @@
 import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
-import styles from '../../styles/Home.module.css'
+import styles from '../../../styles/Home.module.css'
+import { useRouter } from 'next/router';
 
 const Basic = () => {
-    const LevelList =[
-        1,2,3,4,5
-    ]
-    const caminho = 'basic/'
+    const router = useRouter()
+    const { level } = router.query
+
     return (
         <div className={styles.container}>
             <Head>
@@ -18,13 +18,8 @@ const Basic = () => {
 
             <main className={styles.main}>
                 <div className={styles.main}>
-                    <p>Level : </p>
-                    {
-                        LevelList.map(nivel => <Link key={nivel} href={caminho+nivel} target="_self" ><a ><div key={nivel} ><p className='btn btn-outline-primary mt-2 me-2'>{nivel}</p></div></a></Link>)
-                    }
-                </div>
-                <div>
-
+                    
+                    {level}
                 </div>
             </main>
 

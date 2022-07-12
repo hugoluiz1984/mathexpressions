@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-
+import ButtonDefault from '../components/Button/ButtonDefault' 
 
 export default function Home() {
   return (
@@ -12,10 +12,16 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        
-        <div>Basic Math Expressions</div>
-        <div>Comparators</div>
-        
+
+        <div className={styles.line}>
+          <span className='fs-5'> Basic </span>
+          <a href='./basic' className='btn btn-outline-primary mt-2 me-2'>+ - x ÷</a>
+        </div>
+        <div className={styles.line}>
+          <span className='fs-5'>Comparators</span>
+          <a href='./basic' className='btn btn-outline-primary mt-2 me-2'>{`> = <`}</a>
+        </div>
+
 
       </main>
     </div>
