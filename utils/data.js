@@ -11,3 +11,6 @@ export const operators = [
 export const comparators = [
     '>','=','<'
 ]
+
+export const Resultados = [
+]

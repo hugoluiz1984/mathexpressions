@@ -21,7 +21,14 @@
   box-sizing: border-box;
   margin: 4rem;
 }
+.custom {
+  min-height: 50px !important;
+  min-width: 200px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+}
 
 @media (max-width: 600px) {
   .grid {
