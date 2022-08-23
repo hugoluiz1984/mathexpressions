@@ -19,7 +19,7 @@ export default function Home() {
         </div>
         <div className={styles.line}>
           <span className='fs-5'>Comparators</span>
-          <a href='./basic' className='btn btn-outline-primary mt-2 me-2'>{`> = <`}</a>
+          <a href='./compare' className='btn btn-outline-primary mt-2 me-2'>{`> = <`}</a>
         </div>
 
 
