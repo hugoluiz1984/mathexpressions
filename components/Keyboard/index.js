@@ -7,7 +7,7 @@ const Keyboard = (props) => {
             <div className="row">
                 <div className='col btn btn-outline-primary mt-2 me-2 ' onClick={()=>{click('1')}}>1</div>
                 <div className='col btn btn-outline-primary mt-2 me-2 ' onClick={()=>{click('2')}}>2</div>
-                <div className='col btn btn-outline-primary mt-2 me-2 ' onClick={()=>{click('2')}}>3</div>
+                <div className='col btn btn-outline-primary mt-2 me-2 ' onClick={()=>{click('3')}}>3</div>
             </div>
             <div className="row">
                 <div className='col btn btn-outline-primary mt-2 me-2 ' onClick={()=>{click('4')}}>4</div>
