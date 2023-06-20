@@ -34,7 +34,7 @@ const Basic = () => {
   }, [cont]);
 
   const getNum = () => {
-    const operators = ["+", "-", "x", "÷"];
+    const operators = ["x"];
     const operatorIndex = Math.floor(Math.random() * operators.length);
     const num1 = getRandomIntInclusive(1, 20);
     const num2 = getRandomIntInclusive(0, num1);

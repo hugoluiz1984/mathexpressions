@@ -1,6 +1,5 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
-import ButtonDefault from '../components/Button/ButtonDefault' 
+import Head from "next/head";
+import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
@@ -11,19 +10,56 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-
-        <div className={styles.line}>
-          <span className='fs-5'> Basic </span>
-          <a href='./basic' className='btn btn-outline-primary mt-2 me-2'>+ - x ÷</a>
+      <main className="d-flex gap-5 justify-content-center  flex-wrap m-2">
+        <div className="d-flex justify-content-center row">
+          <span className="text-center fs-5"> Basic </span>
+          <a href="./basic" className="btn btn-outline-primary mt-2 me-2">
+            + - x ÷
+          </a>
         </div>
-        <div className={styles.line}>
-          <span className='fs-5'>Comparators</span>
-          <a href='./compare' className='btn btn-outline-primary mt-2 me-2'>{`> = <`}</a>
+        <div className="d-flex justify-content-center row">
+          <span className="text-center fs-5">Comparators</span>
+          <a
+            href="./compare"
+            className="btn btn-outline-primary mt-2 me-2"
+          >{`> = <`}</a>
         </div>
-
-
+        <div className="d-flex justify-content-center row">
+          <span className="text-center fs-5">Addition</span>
+          <a
+            href="./addition"
+            className="btn btn-outline-primary mt-2 me-2"
+          >{`+`}</a>
+        </div>
+        <div className="d-flex justify-content-center row">
+          <span className="text-center fs-5">Subtraction</span>
+          <a
+            href="./subtraction"
+            className="btn btn-outline-primary mt-2 me-2"
+          >{`-`}</a>
+        </div>
+        <div className="d-flex justify-content-center row">
+          <span className="text-center fs-5">Multiplication</span>
+          <a
+            href="./multiplication"
+            className="btn btn-outline-primary mt-2 me-2"
+          >{`x`}</a>
+        </div>
+        <div className="d-flex justify-content-center row">
+          <span className="text-center fs-5">Division</span>
+          <a
+            href="./division"
+            className="btn btn-outline-primary mt-2 me-2"
+          >{`÷`}</a>
+        </div>
+        <div className="d-flex justify-content-center row">
+          <span className="text-center fs-5">Equations</span>
+          <a
+            href="./equations"
+            className="btn btn-outline-primary mt-2 me-2"
+          >{`?x+ ? = ?+?`}</a>
+        </div>
       </main>
     </div>
-  )
+  );
 }
