@@ -50,7 +50,6 @@ const Compare = () => {
 
   const verificar = () => {
     if (resp !== "") {
-      let val = 0;
       let tempExp;
 
       if (number1 > number2) {
